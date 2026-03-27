@@ -1,0 +1,37 @@
+site_name: DVRPC CMS Resource 2.0
+site_url: https://guide.dvrpc.org
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Managing Content: content.md
+  - Creating a Page Node: content-types/page.md
+  - Working with Content: 
+    - Content Builder: models/content-builder.md
+    - Section: models/section.md
+    - Text: models/text.md
+    - Additional Components: paragraph-types/report.md
+  - Other Node Types:    
+    - Alert: content-types/alert.md
+    # - Article *: content-types/article.md
+    # - Landing Page: content-types/landing.md
+    # - Product Landing Page *: content-types/product-landing-page.md
+    - Project/Program : content-types/project-program.md
+    - Topic: content-types/topic.md
+    - Topic Subpage: content-types/topic-subpage.md
+  - Taxonomies: taxonomies.md
+  # - Media: media.md
+  - Webforms: webforms.md
+  - Entityqueues: entityqueues.md
+  - URL Aliases & Redirects: redirects.md
+  - Menus: menus.md
+  - Accessibility Best Practices: a11y.md
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - footnotes
